@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,13 @@
         <img src="images/odin-logo.png" alt="The Odin Project logo" />
         <span>Odin</span>
       </div>
+      <p>
+        Photo by
+        <a href="https://unsplash.com/@gridverselabs" target="_blank"
+          >Anupam Raisim</a
+        >
+        in <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+      </p>
     </div>
 
     <div class="right-panel">
@@ -31,20 +38,46 @@
       </div>
 
       <form id="form-section" action="">
-        <p>Lets do this!</p>
+        <p>Let's do this!</p>
+        <div class="row">
+          <div class="field">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
 
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" />
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <label for="phone">Phone number</label>
-        <input type="tel" name="phone" id="phone" />
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
-        <label for="confirm-password">Confirm password</label>
-        <input type="password" name="confirm-password" id="confirm-password" />
+          <div class="field">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <div class="field">
+            <label for="confirm-password">Confirm password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+        </div>
       </form>
 
       <div class="submit-section">
