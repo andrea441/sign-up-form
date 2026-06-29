@@ -133,6 +133,16 @@ body {
   border: 2px solid #e5e7eb;
 }
 
+.row input:user-invalid {
+  border: 2px solid red;
+}
+
+.row input:focus {
+  border: 2px solid #0055ff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  outline: none;
+}
+
 .submit-section {
   display: flex;
   flex-direction: column;
